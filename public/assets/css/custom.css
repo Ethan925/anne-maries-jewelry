@@ -8,7 +8,7 @@ body {
 
 #main > section.one {
   background-image: url("../../images/horizontal_diamonds.png");
-  height: 100vh;
+  height: 50px;
 }
 
 header.cover {
