@@ -85,3 +85,7 @@ header.cover {
   bottom: 10px;
   margin-left: -15px;
 }
+
+.modal-dialog {
+  width: calc(100vw - 100px);
+}
