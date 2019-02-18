@@ -45,13 +45,41 @@ header.cover {
   width: 75%;
 }
 
-.facebook-icon {
+.facebook-icon,
+.instagram-icon,
+.pinterest-icon {
   float: right;
   padding-right: 15px;
+  cursor: pointer;
 }
 
-#header .icons a:hover {
+#header .icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#header .icons.visible-xs{
+  flex-direction: row;
+  bottom: 20px;
+}
+
+#header .icons .facebook-icon a {
   color: #3b5998;
+}
+#header .icons .instagram-icon a {
+  color: #8a3ab9;
+}
+#header .icons .pinterest-icon a {
+  color: #c8232c;
+}
+
+#header .icons .facebook-icon a:hover,
+#header .icons .instagram-icon a:hover,
+#header .icons .pinterest-icon a:hover {
+  color: #e27689;
 }
 
 .nav ul li a:hover {
